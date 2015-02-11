@@ -6,15 +6,6 @@ class Footman < Unit
     @health_points = 60
     @attack_power = 10
   end
-
-  # def attack!(target)
-  #   target.damage(@attack_power)
-  # end
-
-  # def damage(arg)
-  #   @health_points -= arg
-  # end
-
 end
 
 class Peasant < Unit
