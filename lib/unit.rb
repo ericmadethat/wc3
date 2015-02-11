@@ -1,8 +1,8 @@
 class Unit
-  attr_reader :health_points, :attack_points
-  def initialize(health_points, attack_points)
+  attr_reader :health_points, :attack_power
+  def initialize(health_points, attack_power)
     @health_points = health_points
-    @attack_points = attack_points
+    @attack_power = attack_power
   end
 
   def damage(hit)
@@ -10,7 +10,7 @@ class Unit
   end
 
   def attack!(target)
-    target.damage(@attack_points)
+    target.damage(@attack_power)
   end
 
 end
